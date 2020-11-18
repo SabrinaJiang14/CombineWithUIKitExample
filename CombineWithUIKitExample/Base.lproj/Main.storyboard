@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CombineWithUIKitExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9os-UK-MZf">
+                                <rect key="frame" x="186" y="442.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqA-74-UrT">
+                                <rect key="frame" x="184" y="210" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Im-XA-YgA">
+                                <rect key="frame" x="182.5" y="306" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9os-UK-MZf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0qz-Bk-WW4"/>
+                            <constraint firstItem="BqA-74-UrT" firstAttribute="centerX" secondItem="9os-UK-MZf" secondAttribute="centerX" id="Ich-3b-77P"/>
+                            <constraint firstItem="9os-UK-MZf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c4h-Tw-0eQ"/>
+                            <constraint firstItem="6Im-XA-YgA" firstAttribute="centerX" secondItem="9os-UK-MZf" secondAttribute="centerX" id="cJX-LC-Kbn"/>
+                            <constraint firstItem="9os-UK-MZf" firstAttribute="top" secondItem="BqA-74-UrT" secondAttribute="bottom" constant="202.5" id="lDy-7M-4ey"/>
+                            <constraint firstItem="9os-UK-MZf" firstAttribute="top" secondItem="6Im-XA-YgA" secondAttribute="bottom" constant="105.5" id="v9b-2x-EFH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="BqA-74-UrT" id="DXb-qm-Tv6"/>
+                        <outlet property="label" destination="9os-UK-MZf" id="lRg-bB-hO1"/>
+                        <outlet property="mSwitch" destination="6Im-XA-YgA" id="Aje-Q2-ShU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
